@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Player</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <video src="https://vod-progressive.akamaized.net/exp=1630495672~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1054%2F18%2F455274089%2F2007356795.mp4~hmac=76f5d837943ad7213af5a416f33627cec8d57b676fe4656a3392071a1918de10/vimeo-prod-skyfire-std-us/01/1054/18/455274089/2007356795.mp4?filename=pexels-matthias-groeneveld-5292753.mp4" id="video" poster="images/poster.png" muted></video>
+            <div class="player-overlay">
+                <h1 class="player-title">Video Relajante</h1>
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="Retroceder 10 segundos"
+                        title="Retroceder 10 segundos" hidden></button>
+                    <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+                    <button class="button" id="pause" aria-label="Pausar" title="Pausar" hidden></button>
+                    <button class="button" id="forward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos"
+                        hidden></button>
+                </div>
+            </div>
+
+            <div class="player-progress">
+                <input id="progress" type="range" min="0" value="0" step="1">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/actions.js"></script>
+
+</body>
+
+</html>
